@@ -1,4 +1,4 @@
-const proxy = "https://hasnat-assignemnt-2.herokuapp.com/";
+const proxy = "https://hasnat-assignemnt-2.herokuapp.com";
 
 $(document).ready(() => {
   getRecords();
