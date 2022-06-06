@@ -30,7 +30,7 @@ $(document).ready(() => {
       return;
     }
     obj = { name, type, price };
-    $.post("http://localhost:8080/products", obj, (res) => {
+    $.post(proxy+"/products", obj, (res) => {
       console.log(res);
       $("#product_name").val("");
       $("#product_type").val("");
