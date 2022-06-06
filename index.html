@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script src="/main.js"></script>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <div style="margin-left: 2%">
+      <h1>Assignment 3</h1>
+      <span>JQuery Based Single Page Web app</span>
+    </div>
+    <br />
+    <div style="width: 30%; margin-left: 65%; position: absolute">
+      <form>
+        <div class="form-group">
+          <label for="product_name">Product</label>
+          <input
+            id="product_name"
+            type="text"
+            class="form-control"
+            aria-describedby="emailHelp"
+            placeholder="Enter Product Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product_type">Type</label>
+          <input
+            id="product_type"
+            type="text"
+            class="form-control"
+            placeholder="Enter Type of Product"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product_price">Price</label>
+          <input
+            id="product_price"
+            type="number"
+            class="form-control"
+            placeholder="Enter Price of Product"
+            required
+          />
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">
+          Submit
+        </button>
+        <button
+          type="button"
+          id="update"
+          onclick="edit(this)"
+          class="btn btn-primary"
+          disabled
+        >
+          Update
+        </button>
+      </form>
+    </div>
+    <br />
+    <div
+      style="width: 50%; margin-left: 2%; margin-top: 2%; position: absolute"
+    >
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Type</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
