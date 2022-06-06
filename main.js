@@ -1,4 +1,4 @@
-const proxy = "http://localhost:8080";
+const proxy = "https://hasnat-assignemnt-2.herokuapp.com/";
 
 $(document).ready(() => {
   getRecords();
